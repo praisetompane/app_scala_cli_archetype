@@ -1,5 +1,5 @@
 # app_x_scala
-![build status](https://github.com/praisetompane/app_project_x_scala/actions/workflows/app_project_x_scala.yaml/badge.svg) <br>
+![build status](https://github.com/praisetompane/app_project_x_scala/actions/workflows/app_x_scala.yaml/badge.svg) <br>
 
 generic scala CLI template project for file processing.
 
