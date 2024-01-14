@@ -1,6 +1,6 @@
-package com.app_project_x_scala.gateway
+package com.app_x_scala.gateway
 
-import com.app_project_x_scala.model.{ModelA, ModelB}
+import com.app_x_scala.model.{ModelA, ModelB}
 
 object FileToModelParser {
   def parse(modelAs: List[String]): List[ModelA] =

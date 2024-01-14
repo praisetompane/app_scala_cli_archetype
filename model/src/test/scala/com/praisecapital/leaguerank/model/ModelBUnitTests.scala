@@ -1,8 +1,8 @@
-package com.app_project_x_scala.model
+package com.app_x_scala.model
 
 import org.scalatest.funsuite.AnyFunSuite
-import com.app_project_x_scala.model.ModelB
-import com.app_project_x_scala.model.ModelBDefaultObject
+import com.app_x_scala.model.ModelB
+import com.app_x_scala.model.ModelBDefaultObject
 
 class ModelBUnitTests extends AnyFunSuite {
 

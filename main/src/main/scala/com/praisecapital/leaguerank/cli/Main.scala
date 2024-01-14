@@ -1,7 +1,7 @@
-package com.app_project_x_scala.cli
+package com.app_x_scala.cli
 
-import com.app_project_x_scala.gateway._
-import com.app_project_x_scala.core._
+import com.app_x_scala.gateway._
+import com.app_x_scala.core._
 import java.io.FileNotFoundException
 object Main extends App {
   try {

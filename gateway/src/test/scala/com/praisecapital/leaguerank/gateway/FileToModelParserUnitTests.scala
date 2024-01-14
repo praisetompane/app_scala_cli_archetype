@@ -1,7 +1,7 @@
-package com.app_project_x_scala.gateway
+package com.app_x_scala.gateway
 
 import org.scalatest.funsuite.AnyFunSuite
-import com.app_project_x_scala.model.{ModelADefaultObject, ModelBDefaultObject}
+import com.app_x_scala.model.{ModelADefaultObject, ModelBDefaultObject}
 
 class FileToModelParserUnitTests extends AnyFunSuite {
 

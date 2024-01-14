@@ -39,9 +39,9 @@ lazy val Main: Project = Project("main", file("main"))
   .enablePlugins(sbtassembly.AssemblyPlugin)
   .settings(
     name := "main",
-    assembly / assemblyJarName := "app_project_x_scala.jar",
+    assembly / assemblyJarName := "app_x_scala.jar",
     assembly / assemblyOutputPath := file(
-      "release/app_project_x_scala.jar"
+      "release/app_x_scala.jar"
     ),
     assembly / assemblyOption := (assemblyOption in assembly).value
       .copy(prependShellScript = Some(defaultShellScript)),
@@ -50,7 +50,7 @@ lazy val Main: Project = Project("main", file("main"))
     )
   )
 
-lazy val app_project_x_scala: Project = project
+lazy val app_x_scala: Project = project
   .in(file("."))
   .aggregate(Model, Gateway, Core, Main)
   .disablePlugins(sbtassembly.AssemblyPlugin)

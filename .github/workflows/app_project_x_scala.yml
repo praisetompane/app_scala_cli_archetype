@@ -1,4 +1,4 @@
-name: app_project_x_scala
+name: app_x_scala
 
 on:
   push:
@@ -45,5 +45,5 @@ jobs:
       run: sbt assembly
     - uses: actions/upload-artifact@v1
       with:
-        name: app_project_x_scala
+        name: app_x_scala
         path: release

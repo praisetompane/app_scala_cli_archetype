@@ -1,4 +1,4 @@
-package com.app_project_x_scala.model
+package com.app_x_scala.model
 
 case class ModelB(name: String, score: Int)
 
