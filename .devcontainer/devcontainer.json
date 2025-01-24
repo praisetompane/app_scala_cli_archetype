@@ -1,0 +1,16 @@
+{
+	"name": "app_scala_quickstart_cli",
+	"image": "mcr.microsoft.com/devcontainers/java",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"scala-lang.scala",
+				"scalameta.metals"
+			],
+			"settings": {}
+		}
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/app_scala_quickstart_cli,type=bind,consistency=delegated",
+	"workspaceFolder": "/app_scala_quickstart_cli",
+	"runArgs": []
+}

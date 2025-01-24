@@ -1,4 +1,4 @@
-name: app_x_scala
+name: app_scala_quickstart_cli
 
 on:
   push:
@@ -45,5 +45,5 @@ jobs:
       run: sbt assembly
     - uses: actions/upload-artifact@v4
       with:
-        name: app_x_scala
+        name: app_scala_quickstart_cli
         path: release

@@ -1,5 +1,5 @@
 import org.scalatest.funsuite.AnyFunSuite
-import com.app_x_scala.cli.Main
+import com.app_scala_quickstart_cli.cli.Main
 
 class MainUnitTests extends AnyFunSuite {
   test("prints correct message when no filename parameter supplied.") {

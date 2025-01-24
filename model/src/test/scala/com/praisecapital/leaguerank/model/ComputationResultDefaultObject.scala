@@ -1,5 +1,5 @@
-package com.app_x_scala.model
+package com.app_scala_quickstart_cli.model
 
-import com.app_x_scala.model.ComputationResult
+import com.app_scala_quickstart_cli.model.ComputationResult
 
 object ComputationResultDefaultObject extends ComputationResult(0, "", 0)

@@ -1,5 +1,5 @@
-# app_x_scala
-![build status](https://github.com/praisetompane-utilities/app_x_scala/actions/workflows/app_x_scala.yaml/badge.svg) <br>
+# app_scala_quickstart_cli
+![build status](https://github.com/praisetompane-utilities/app_scala_quickstart_cli/actions/workflows/app_scala_quickstart_cli.yaml/badge.svg) <br>
 
 generic scala CLI template project for file processing.
 
@@ -47,11 +47,11 @@ make
 
 ```shell
 # from root directory
-./release/app_x_scala.jar  ./release/sample_input.txt
+./release/app_scala_quickstart_cli.jar  ./release/sample_input.txt
 ```
 
 - for your own file, run from the release folder with command format below
 
 ```
-    ./app_x_scala.jar <your_file_name>
+    ./app_scala_quickstart_cli.jar <your_file_name>
 ```

@@ -1,4 +1,4 @@
-package com.app_x_scala.model
+package com.app_scala_quickstart_cli.model
 
 case class ModelB(name: String, score: Int)
 
