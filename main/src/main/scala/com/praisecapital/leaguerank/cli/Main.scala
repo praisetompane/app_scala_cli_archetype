@@ -1,7 +1,7 @@
-package com.app_x_scala.cli
+package com.app_scala_quickstart_cli.cli
 
-import com.app_x_scala.gateway._
-import com.app_x_scala.core._
+import com.app_scala_quickstart_cli.gateway._
+import com.app_scala_quickstart_cli.core._
 import java.io.FileNotFoundException
 object Main extends App {
   try {

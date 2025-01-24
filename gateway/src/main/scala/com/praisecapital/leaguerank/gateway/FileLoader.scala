@@ -1,6 +1,6 @@
-package com.app_x_scala.gateway
+package com.app_scala_quickstart_cli.gateway
 
-import com.app_x_scala.model.{ModelA, ModelB}
+import com.app_scala_quickstart_cli.model.{ModelA, ModelB}
 import scala.util.{Try, Success, Failure}
 import scala.io.Source
 import scala.util.Using

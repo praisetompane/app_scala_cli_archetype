@@ -8,3 +8,4 @@ target/
 .project/.bloop/
 project/project/
 .project/project/.bloop/
+project/metals.sbt
