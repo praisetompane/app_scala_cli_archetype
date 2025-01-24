@@ -1,7 +1,7 @@
-package com.app_x_scala.core
+package com.app_scala_quickstart_cli.core
 
 import scala.collection.mutable.LinkedHashMap
-import com.app_x_scala.model._
+import com.app_scala_quickstart_cli.model._
 
 class CoreComputation() {
   def compute(modelAs: List[ModelA]): List[ComputationResult] = {

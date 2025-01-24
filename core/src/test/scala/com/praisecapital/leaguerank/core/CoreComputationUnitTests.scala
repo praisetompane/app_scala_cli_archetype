@@ -1,8 +1,8 @@
 import org.scalatest.funsuite.AnyFunSuite
-import com.app_x_scala.model._
-import com.app_x_scala.core.CoreComputation
+import com.app_scala_quickstart_cli.model._
+import com.app_scala_quickstart_cli.core.CoreComputation
 import scala.collection.mutable.LinkedHashMap
-import com.app_x_scala.model.{ModelADefaultObject, ModelBDefaultObject}
+import com.app_scala_quickstart_cli.model.{ModelADefaultObject, ModelBDefaultObject}
 
 class CoreComputationUnitTests extends AnyFunSuite {
   test("Can compute") {
