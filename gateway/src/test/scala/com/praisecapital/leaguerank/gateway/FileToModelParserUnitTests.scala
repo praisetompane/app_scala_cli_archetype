@@ -3,11 +3,9 @@ package com.app_scala_quickstart_cli.gateway
 import org.scalatest.funsuite.AnyFunSuite
 import com.app_scala_quickstart_cli.model.{ModelADefaultObject, ModelBDefaultObject}
 
-class FileToModelParserUnitTests extends AnyFunSuite {
+class FileToModelParserUnitTests extends AnyFunSuite:
 
-  test(
-    "successfully parse a single match result in string format to a List[ModelA] object"
-  ) {
+  test("successfully parse a single match result in string format to a List[ModelA] object"):
     val modelAs = "ObjectA 3, ObjectB 3"
     val objectA = "ObjectA"
     val ObjectB = "ObjectB"
@@ -19,11 +17,8 @@ class FileToModelParserUnitTests extends AnyFunSuite {
     )
 
     assert(expectedMatchResults === FileToModelParser.parse(List(modelAs)))
-  }
-
-  test(
-    "successfully parse multiple match result in string format to a List[ModelA] object"
-  ) {
+  
+  test("successfully parse multiple match result in string format to a List[ModelA] object"):
     val modelAs_1 = "ObjectA 3, ObjectB 3"
     val modelAs_2 = "ObjectAA 1, ObjectBB 0"
     val objectA = "ObjectA"
@@ -42,10 +37,4 @@ class FileToModelParserUnitTests extends AnyFunSuite {
       )
     )
 
-    assert(
-      expectedMatchResults === FileToModelParser.parse(
-        List(modelAs_1, modelAs_2)
-      )
-    )
-  }
-}
+    assert (expectedMatchResults === FileToModelParser.parse(List(modelAs_1, modelAs_2)))
