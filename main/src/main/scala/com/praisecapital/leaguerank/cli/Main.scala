@@ -3,9 +3,10 @@ package com.app_scala_quickstart_cli.cli
 import com.app_scala_quickstart_cli.gateway._
 import com.app_scala_quickstart_cli.core._
 import java.io.FileNotFoundException
-object Main extends App {
+
+@main def main(args: String*) =
   try {
-    if (args.length == 0)
+    if (args.length == 1 && args(0).isEmpty)
       println("Please provide a filename.")
     else if (args.length > 1)
       println("Please provide one filename.")
@@ -28,4 +29,3 @@ object Main extends App {
       )
       e.printStackTrace()
   }
-}

@@ -43,8 +43,7 @@ lazy val Main: Project = Project("main", file("main"))
     assembly / assemblyOutputPath := file(
       "release/app_scala_quickstart_cli.jar"
     ),
-    assembly / assemblyOption := (assemblyOption in assembly).value
-      .copy(prependShellScript = Some(defaultShellScript)),
+    assembly / assemblyOption := (assemblyOption in assembly).value.copy(prependShellScript = Some(defaultShellScript)),
     libraryDependencies ++= Seq(
       Dependencies.scalaTestFunSuite % Test
     )

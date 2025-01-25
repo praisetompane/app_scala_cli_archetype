@@ -11,7 +11,12 @@ object Settings {
     version := "1.0.0",
     scalaVersion := Dependencies.scalaVersion,
     scalacOptions ++= Seq("-deprecation"),
-    coverageMinimum := 80,
+    coverageMinimumStmtTotal := 80,
+    coverageMinimumBranchTotal := 80,
+    coverageMinimumStmtPerPackage := 80,
+    coverageMinimumBranchPerPackage := 80,
+    coverageMinimumStmtPerFile := 80,
+    coverageMinimumBranchPerFile := 80,
     coverageFailOnMinimum := true
   )
 
