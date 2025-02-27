@@ -11,6 +11,5 @@
 		}
 	},
 	"workspaceMount": "source=${localWorkspaceFolder},target=/app_scala_quickstart_cli,type=bind,consistency=delegated",
-	"workspaceFolder": "/app_scala_quickstart_cli",
-	"runArgs": []
+	"workspaceFolder": "/app_scala_quickstart_cli"
 }
