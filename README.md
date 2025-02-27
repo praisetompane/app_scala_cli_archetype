@@ -1,10 +1,10 @@
 # app_scala_quickstart_cli
 ![build status](https://github.com/praisetompane-utilities/app_scala_quickstart_cli/actions/workflows/app_scala_quickstart_cli.yaml/badge.svg) <br>
 
-generic scala CLI template project for file processing.
+## Objectives
+- A generic scala CLI template project for file processing.
 
-# project layout
-
+## Project Structure
 - core
   - The business logic of the application lives in this module.
 - model
@@ -16,42 +16,59 @@ generic scala CLI template project for file processing.
     - the command line interface into the application lives in this module
   - if one were to need to expose this service over REST, gRPC, as library etc, they simply add a module here that provides the interface they want expose.
 
-# file interface(data format)
+## File interface(data format)
+  - definitions:
+    - ModelA = AlphabetName Score
+      - AlphabetName can incldue spaces
+    - Delimiter = ", " => comma and one space
+  - The content of modelA line is:
+    - pattern: ModelADelimiter ModelA
+    - Example:
+      - ObjectA 1, ObjectB 0
+        - ModelA_A = ObjectA 1
+        - Delimiter = ", "
+        - ModelA_B = FC ObjectB 0
 
-- definitions:
-  - ModelA = AlphabetName Score
-    - AlphabetName can incldue spaces
-  - Delimiter = ", " => comma and one space
-- The content of modelA line is:
-  - pattern: ModelADelimiter ModelA
-  - Example:
-    - ObjectA 1, ObjectB 0
-      - ModelA_A = ObjectA 1
-      - Delimiter = ", "
-      - ModelA_B = FC ObjectB 0
+## Dependencies
+- Java 11
 
-# dependencies
+## Setup Instructions
+- The repository is configured to use [devcontainers](https://containers.dev) for development.
+    - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 
-- java 11
-
-# build
+# Build
 ```shell
 # from root directory
 make
 ```
 
-# usage
-
-- clone repository to machine
-- run commands below to see output with sample file
-
+# Run Program
 ```shell
-# from root directory
 ./release/app_scala_quickstart_cli.jar  ./release/sample_input.txt
 ```
 
 - for your own file, run from the release folder with command format below
+```
+./app_scala_quickstart_cli.jar <your_file_name>
+```
 
+## Testing
+- Run unit and integration tests
 ```
-    ./app_scala_quickstart_cli.jar <your_file_name>
+sbt test
 ```
+
+## Git Conventions
+- **NB:** The main is locked and all changes must come through a Pull Request.
+- Commit Messages:
+    - Provide concise commit messages that describe what you have done.
+        ```shell
+        # example:
+        git commit -m "feat(core): algorithm" -m"implement my new shiny faster algorithm"
+        ```
+    - References:
+        - https://www.conventionalcommits.org/en/v1.0.0/
+        - https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/
+
+
+**Disclaimer**: This is still work in progress.
