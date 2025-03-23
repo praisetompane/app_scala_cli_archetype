@@ -2,7 +2,7 @@
 ![build status](https://github.com/praisetompane-utilities/app_scala_quickstart_cli/actions/workflows/app_scala_quickstart_cli.yaml/badge.svg) <br>
 
 ## Objectives
-- A generic scala CLI template project for file processing.
+- A plain Scala CLI archetype project with common patterns to enable focusing on the unique aspects of your application instead of setup ceremony. 
 
 ## Project Structure
 - core
@@ -30,7 +30,7 @@
         - ModelA_B = FC ObjectB 0
 
 ## Dependencies
-- Java 11
+- Java Development Kit
 
 ## Setup Instructions
 - The repository is configured to use [devcontainers](https://containers.dev) for development.
